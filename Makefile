@@ -25,4 +25,7 @@ bootstrap: package.json
 test: lint
 
 deploy: build
-	@pm2 deploy production
+	git add -A
+	git commit -m "Rebuild"
+	git push
+	pm2 deploy production
