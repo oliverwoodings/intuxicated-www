@@ -24,5 +24,5 @@ bootstrap: package.json
 
 test: lint
 
-deploy:
+deploy: build
 	@pm2 deploy production
