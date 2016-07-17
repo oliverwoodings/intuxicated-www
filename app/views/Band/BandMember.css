@@ -1,0 +1,65 @@
+@import 'variables';
+
+.root {
+  border: 0.5vw solid var(--color-toiletGreen);
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  height: 25vw;
+  margin: 2vw;
+  position: relative;
+  width: 25vw;
+  z-index: 1;
+
+  @media (max-width: 800px) {
+    height: 35vw;
+    width: 35vw;
+  }
+
+  @media (max-width: 500px) {
+    height: 65vw;
+    margin-bottom: 6vw;
+    width: 65vw;
+  }
+}
+
+.active {
+  font-size: 2vw;
+
+  @media (max-width: 800px) {
+    font-size: 3vw;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 5.5vw;
+  }
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10%;
+  text-align: center;
+}
+
+.background {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://placekitten.com/300/300');
+  border-radius: 100%;
+  filter: brightness(0.4) grayscale(100%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transition: filter 0.3s;
+  z-index: -1;
+}
+
+.root:hover .background,
+.active .background {
+  filter: brightness(0.6) grayscale(20%);
+}

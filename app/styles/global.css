@@ -1,0 +1,13 @@
+@import 'normalize.css';
+@import 'variables';
+
+body, html {
+  color: var(--color-nebulaGrey);
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

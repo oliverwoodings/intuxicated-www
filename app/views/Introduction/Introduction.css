@@ -1,0 +1,7 @@
+@import 'variables';
+
+.root {
+  background: var(--color-toiletGreen);
+  color: var(--color-goldenSnow);
+  padding: 10vw;
+}

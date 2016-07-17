@@ -1,0 +1,11 @@
+@import 'variables';
+
+.root {
+  color: var(--color-goldenSnow);
+  justify-content: space-around;
+  padding: 3vw 10vw;
+}
+
+.logo {
+  width: 30vw;
+}
