@@ -8,6 +8,14 @@ body, html {
   width: 100%;
 }
 
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
+
 * {
   box-sizing: border-box;
 }

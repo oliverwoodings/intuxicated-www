@@ -5,9 +5,6 @@ BIN = ./node_modules/.bin
 start:
 	$(BIN)/webpack-dev-server --hot --inline --port 1234 --content-base public
 
-serve:
-	$(BIN)/http-server -p 1234 -d false ./dist 
-
 lint:
 	$(BIN)/standard
 
