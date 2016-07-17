@@ -13,7 +13,7 @@ const config = {
     './app/index'
   ],
   output: {
-    path: resolve(__dirname, 'dist', 'static'),
+    path: resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   resolve: {
