@@ -10,21 +10,26 @@ export default class BandMember extends Component {
   };
 
   render () {
+    const { image } = this.props
     const { open } = this.state
     const classes = classnames(styles.root, {
       [styles.active]: open
     })
 
+    const style = {
+      backgroundImage: `url('${image}')`
+    }
+
     return (
       <div className={classes} onClick={::this.onToggle}>
-        <div className={styles.background} />
+        <div className={styles.background} style={style} />
         {this.renderDetails()}
       </div>
     )
   }
 
   renderDetails () {
-    const { name, instrument, bio, image } = this.props
+    const { name, instrument, bio } = this.props
     const { open } = this.state
 
     if (!open) {
