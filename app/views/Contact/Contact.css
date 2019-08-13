@@ -2,26 +2,6 @@
 
 .root {
   color: var(--color-goldenSnow);
-  fill: var(--color-goldenSnow);
-}
-
-.item {
-  align-items: center;
-  display: flex;
-  margin-top: 5vw;
-
-  @media (max-width: 500px) {
-    flex-direction: column;
-  }
-}
-
-.icon {
-  margin-right: 3vw;
-
-  @media (max-width: 500px) {
-    font-size: 10vw;
-    margin: 7vw 0 3vw 0;
-  }
 }
 
 .title {

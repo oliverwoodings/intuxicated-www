@@ -4,7 +4,6 @@ import Introduction from './Introduction'
 import Charity from './Charity'
 import Band from './Band'
 import Contact from './Contact'
-import Tour from './Tour'
 import styles from './App.css'
 
 export default function App () {
@@ -14,7 +13,6 @@ export default function App () {
       <Introduction />
       <Charity />
       <Band />
-      <Tour />
       <Contact />
     </div>
   )

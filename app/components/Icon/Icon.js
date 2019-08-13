@@ -15,8 +15,8 @@ export default class Icon extends Component {
       spin,
       svg,
       rotate,
-      ...props,
-      className
+      className,
+      ...props
     } = this.props
 
     const classes = classnames(styles.root, className, {

@@ -3,7 +3,6 @@
 .root {
   border: 0.5vw solid var(--color-toiletGreen);
   border-radius: 100%;
-  cursor: pointer;
   display: flex;
   height: 25vw;
   margin: 2vw;
@@ -21,18 +20,6 @@
     height: 65vw;
     margin-bottom: 6vw;
     width: 65vw;
-  }
-}
-
-.active {
-  font-size: 2vw;
-
-  @media (max-width: 800px) {
-    font-size: 3vw;
-  }
-
-  @media (max-width: 500px) {
-    font-size: 5.5vw;
   }
 }
 
@@ -59,7 +46,6 @@
   z-index: -1;
 }
 
-.root:hover .background,
-.active .background {
+.root:hover .background {
   filter: brightness(0.6) grayscale(20%);
 }

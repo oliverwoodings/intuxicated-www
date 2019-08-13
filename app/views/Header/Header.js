@@ -1,5 +1,6 @@
 import React from 'react'
 import Panel from '../../components/Panel'
+import Social from '../../components/Social'
 import styles from './Header.css'
 
 export default function Header () {
@@ -9,6 +10,7 @@ export default function Header () {
       <div className={styles.strapline}>
         Affordable live music for any occasion
       </div>
+      <Social inline className={styles.social} />
     </Panel>
   )
 }
