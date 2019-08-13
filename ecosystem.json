@@ -12,7 +12,7 @@
       "host": "intuxicated.owoodings.net",
       "ref": "origin/master",
       "repo": "git@github.com:oliverwoodings/intuxicated-www.git",
-      "path": "/apps/intuxicated-www",
+      "path": "/root/apps/intuxicated-www",
       "post-deploy" : "npm install http-server && pm2 startOrRestart ecosystem.json --env production"
     }
   }
