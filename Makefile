@@ -25,4 +25,4 @@ deploy: build
 	git add -A
 	git commit -m "Rebuild"
 	git push
-	pm2 deploy production
+	npx pm2 deploy production
