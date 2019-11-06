@@ -11,8 +11,8 @@ export default function App () {
     <div className={styles.root}>
       <Header />
       <Introduction />
-      <Charity />
       <Band />
+      <Charity />
       <Contact />
     </div>
   )
